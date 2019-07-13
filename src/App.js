@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BSCSS from 'bootstrap/dist/css/bootstrap.min.css'
+import LoginScreen from './LoginScreen';
+import ChatScreen from './ChatScreen';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: 'Waleed',
+            messages: [],
+            users: []
+        };
+    }
+
+    render() {
+
+        if (this.state.username.length === 0) {
+            return (<LoginScreen></LoginScreen>);
+        } else {
+            return (<ChatScreen></ChatScreen>);
+        }
+    }
+
 }
 
 export default App;

@@ -1,33 +1,49 @@
-.App {
-  text-align: center;
+.logo-login {
+    display: block;
+    margin: 0 auto;
+    margin-top: -60px;
+    margin-bottom: -60px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #141414 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.message {
+    overflow: hidden;
+    display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.message-body {
+    padding: 10px;
+    margin: 0.5em;
+    margin-bottom: 0;
+    border-radius: 1em;
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-left {
+    float: left;
+    background: rgb(177, 200, 172);
+    background: linear-gradient(90deg, rgba(177, 200, 172, 1) 0%, rgb(91, 186, 255) 0%, rgb(5, 255, 59) 100%);
+    color: #fff;
+}
+
+.message-right {
+    float: right;
+    background: #eee;
+    color: #000;
+}
+
+.message-author {
+
+}
+
+.login-box {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
 }
